@@ -1,0 +1,13 @@
+this is the blog post
+<div style=" display:flex; gap:3px; flex-wrap:wrap;">
+
+    {{#each blogs}}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">{{this.desc}}</p>
+            <a href="/blogPost/{{this.slug}}" class="card-link">Card link</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
